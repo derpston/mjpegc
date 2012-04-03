@@ -28,7 +28,6 @@ class MJPEGClient:
             while True:
                 line = self._fh.readline()
 
-
                 if line.startswith("Content-Length: "):
                     length = int(line.split(" ")[1])
 
